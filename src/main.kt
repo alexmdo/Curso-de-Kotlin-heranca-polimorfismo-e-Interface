@@ -1,7 +1,32 @@
 fun main() {
     println("Bem vindo ao Bytebank")
 
-    testaComportamentoDaClasse()
+    val alexandre = Funcionario(
+        "Alexandre",
+        "111.111.111-11",
+        1000.00
+    )
+    println("nome do funcionario: ${alexandre.nome}")
+    println("cpf do funcionario: ${alexandre.cpf}")
+    println("salario do funcionario: ${alexandre.salario}")
+    println("bonificacao do funcionario: ${alexandre.calcularBonificacao()}")
+
+    val brownie = Gerente(
+        "Brownie",
+        "222.222.222-22",
+        2000.00,
+        1234
+    )
+    println("nome do funcionario: ${brownie.nome}")
+    println("cpf do funcionario: ${brownie.cpf}")
+    println("salario do funcionario: ${brownie.salario}")
+    println("bonificacao do funcionario: ${brownie.calcularBonificacao()}")
+
+    if (brownie.autentica(1234)) {
+        println("autenticou com sucesso")
+    } else {
+        println("falha na autenticacao")
+    }
 }
 
 private fun testaComportamentoDaClasse() {
