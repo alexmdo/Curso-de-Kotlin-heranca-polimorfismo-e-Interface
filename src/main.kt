@@ -17,10 +17,10 @@ fun main() {
         2000.00,
         1234
     )
-    println("nome do funcionario: ${brownie.nome}")
-    println("cpf do funcionario: ${brownie.cpf}")
-    println("salario do funcionario: ${brownie.salario}")
-    println("bonificacao do funcionario: ${brownie.calcularBonificacao()}")
+    println("nome do gerente: ${brownie.nome}")
+    println("cpf do gerente: ${brownie.cpf}")
+    println("salario do gerente: ${brownie.salario}")
+    println("bonificacao do gerente: ${brownie.calcularBonificacao()}")
 
     if (brownie.autentica(1234)) {
         println("autenticou com sucesso")
@@ -35,11 +35,11 @@ fun main() {
         4321,
         10000.00
     )
-    println("nome do funcionario: ${nick.nome}")
-    println("cpf do funcionario: ${nick.cpf}")
-    println("salario do funcionario: ${nick.salario}")
-    println("plr do funcionario: ${nick.plr}")
-    println("bonificacao do funcionario: ${nick.calcularBonificacao()}")
+    println("nome do diretor: ${nick.nome}")
+    println("cpf do diretor: ${nick.cpf}")
+    println("salario do diretor: ${nick.salario}")
+    println("plr do diretor: ${nick.plr}")
+    println("bonificacao do diretor: ${nick.calcularBonificacao()}")
 
     if (nick.autentica(1234)) {
         println("autenticou com sucesso")
