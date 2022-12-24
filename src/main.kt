@@ -27,6 +27,25 @@ fun main() {
     } else {
         println("falha na autenticacao")
     }
+
+    val nick = Diretor(
+        "Brownie",
+        "333.333.333-33",
+        3000.00,
+        4321,
+        10000.00
+    )
+    println("nome do funcionario: ${nick.nome}")
+    println("cpf do funcionario: ${nick.cpf}")
+    println("salario do funcionario: ${nick.salario}")
+    println("plr do funcionario: ${nick.plr}")
+    println("bonificacao do funcionario: ${nick.calcularBonificacao()}")
+
+    if (nick.autentica(1234)) {
+        println("autenticou com sucesso")
+    } else {
+        println("falha na autenticacao")
+    }
 }
 
 private fun testaComportamentoDaClasse() {
